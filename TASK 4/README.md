@@ -1,6 +1,17 @@
-Build a Connect Four game using HTML, CSS, and JavaScript! The game will include:
+Connect Four Game
 
-✅ A 7x6 board
-✅ Alternate turns for red and yellow pieces
-✅ Piece placement by clicking columns
-✅ Win detection for horizontal, vertical, and diagonal four-in-a-row
+A simple, lightweight, and interactive Connect Four game built with HTML, CSS, and JavaScript.
+
+Features
+1.Classic 7x6 Connect Four board
+2.Two-player turn-based gameplay
+3.Drop pieces by clicking columns
+4.Alternate turns between red and yellow players
+5.Win detection (horizontal, vertical, and diagonal)
+6.User-friendly interface with real-time updates
+7.Minimal and clean design
+
+Technologies Used
+1.HTML
+2.CSS
+3.JavaScript
