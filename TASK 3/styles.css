@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: url("images/background.jpg") no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200vh;
+  }
+  
+  .wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /*
+    ---------------
+    TODO CONTAINER
+    ---------------
+  */
+  
+  .todo-container {
+    background-color: #f4831a; /* Pastel cream color */
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(184, 100, 11, 0.2);
+    text-align: center;
+  }
+  
+  /* Title */
+  .todo-container h2 {
+    margin: 0 0 15px;
+    color: #2b2a2a;
+    font-weight: 600;
+    font-size: 1.4rem;
+  }
+  
+  /*
+    ----------------
+    INPUT + ADD BUTTON
+    ----------------
+  */
+  
+  .input-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+  }
+  
+  /* The text input */
+  .input-field input {
+    width: 75%;
+    padding: 8px 22px;
+    font-size: 0.9rem;
+    border: 2px solid #cfbabe;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  /* The Add button */
+  .input-field button {
+    padding: 8px 20px;
+    border: none;
+    background-color: #1fed0d; /* green */
+    color: #040202;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .input-field button:hover {
+    background-color: #2ca847; /* darker green on hover */
+  }
+  
+  /*
+    ----------------
+    SUCCESS MESSAGE
+    ----------------
+  */
+  
+  .success-message {
+    color: #090909; /* green text */
+    font-size: 1.0rem;
+    margin: 0 0 10px;
+    display: none; /* hidden by default, shown by JS */
+  }
+  
+  /*
+    -----------
+    TASK LIST
+    -----------
+  */
+  
+  #taskList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Each task item */
+  #taskList li {
+    background-color: #fef3d7;
+    margin-bottom: 8px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 4px rgba(2, 2, 2, 0.1);
+  }
+  
+  /* When a task is completed, we apply a strikethrough */
+  .completed {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  /*
+    -----------
+    ICONS (EDIT/DELETE)
+    -----------
+  */
+  
+  .task-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .task-actions i {
+    cursor: pointer;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .task-actions i:hover {
+    color: #9a4646;
+  }
+  
+  /* Delete icon in red */
+  .task-actions .fa-trash {
+    color: #dc3545;
+  }
+  
+  .task-actions .fa-trash:hover {
+    color: #c82333;
+  }
+  
+  /* Edit icon in blue */
+  .task-actions .fa-pen-to-square {
+    color: #007bff;
+  }
+  
+  .task-actions .fa-pen-to-square:hover {
+    color: #0056b3;
+  }
